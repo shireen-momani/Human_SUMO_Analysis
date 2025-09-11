@@ -5,7 +5,7 @@ Organised into subfolders, each handling a different step of the analysis:
 
 - **peptide_db/**
 
-Python scripts for generating custom peptide databases. Includes in-silico digestions (Lys-C, Glu-C, Asp-N) allowing up to eight missed cleavages.
+Python scripts for generating custom peptide databases. Includes *in silico* digestions (Lys-C, Glu-C, Asp-N) allowing up to eight missed cleavages.
 
 - **sumo_peak_filter/**
 
