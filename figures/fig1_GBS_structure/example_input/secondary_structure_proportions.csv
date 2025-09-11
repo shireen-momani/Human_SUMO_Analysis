@@ -1,0 +1,21 @@
+Filename,Secondary Structure,SUMOylated Sites Within,Total Sites,Percentage
+15_UP000005640_9606,Beta strand,26771,653505,4.1
+Gold,Beta strand,400,8639,4.63
+Gold_Silver,Beta strand,1131,22695,4.98
+Gold_Silver_Bronze,Beta strand,1811,35795,5.06
+Non-SUMOylated_Lysines_on_peptides_Below_1%_FDR,Beta strand,3834,65010,5.9
+15_UP000005640_9606,Coiled coil,34373,653505,5.26
+Gold,Coiled coil,179,8639,2.07
+Gold_Silver,Coiled coil,496,22695,2.19
+Gold_Silver_Bronze,Coiled coil,866,35795,2.42
+Non-SUMOylated_Lysines_on_peptides_Below_1%_FDR,Coiled coil,2909,65010,4.47
+15_UP000005640_9606,Helix,57597,653505,8.81
+Gold,Helix,674,8639,7.8
+Gold_Silver,Helix,1924,22695,8.48
+Gold_Silver_Bronze,Helix,3225,35795,9.01
+Non-SUMOylated_Lysines_on_peptides_Below_1%_FDR,Helix,8969,65010,13.8
+15_UP000005640_9606,Turn,5573,653505,0.85
+Gold,Turn,65,8639,0.75
+Gold_Silver,Turn,200,22695,0.88
+Gold_Silver_Bronze,Turn,319,35795,0.89
+Non-SUMOylated_Lysines_on_peptides_Below_1%_FDR,Turn,871,65010,1.34
