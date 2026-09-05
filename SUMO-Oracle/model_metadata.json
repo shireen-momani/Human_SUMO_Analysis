@@ -1,0 +1,29 @@
+{
+  "feature_columns": [
+    "disorder",
+    "absolute_asa",
+    "pos2_ZASB820101",
+    "dist_nearest_helix",
+    "pos1_LAWE840101",
+    "pos-2_ISOY800102",
+    "pos2_KLEP840101",
+    "pos-1_NAGK730102",
+    "pos1_LEVM760103",
+    "pos-2_FAUJ880113",
+    "sum_AURR980118",
+    "pos2_HUTJ700102",
+    "sum_GARJ730101",
+    "pos-2_BIOV880101",
+    "pos1_MEEJ800101",
+    "pos-2_RACS820103",
+    "pos-2_DIGM050101",
+    "sum_HUTJ700102",
+    "sum_ZASB820101",
+    "pos1_GARJ730101"
+  ],
+  "optimal_threshold_f1": 0.452, 
+  "optimal_threshold_mcc": 0.602,
+  "random_seed": 42,
+  "usage_note": "RF predicts a probability for each lysine site. Apply F1 threshold (0.452) for higher sensitivity (more true SUMO sites but also more false positives). Apply MCC threshold (0.602) for higher confidence predictions (fewer false positives but you miss some true sites)." 
+  
+}
