@@ -49,7 +49,7 @@ sns.set_context("paper")
 
 # Subplot A
 groups = ['Gold', 'Silver', 'Bronze']
-count_k = [8639, 14056, 13100]
+count_k = [8639, 14050, 13032]
 count_a = [46, 243, 2080] 
 
 color_k = '#4A90E2'  #  Blue
