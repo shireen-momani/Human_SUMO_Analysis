@@ -1,6 +1,6 @@
 # SUMO-Oracle
 
-Predicts SUMOylation sites on lysine residues in human proteins from AlphaFold structures. A Random Forest model scores every lysine in each protein using 20 structural and sequence-based features at the lysine and within a ±2-residue window, respectively.
+Predicts SUMOylation sites on lysine residues in human proteins from AlphaFold structures. A Random Forest model scores every lysine in each protein using 20 structural and sequence-based features within a ±2-residue window.
 
 
 
@@ -32,35 +32,6 @@ Metapredict installs its own dependencies (including PyTorch), so the first inst
 python sumo_site_predictor.py -i structures/ -o sumoylation_site_predictions.csv
 ```
 
-The script picks up every `AF-*-F1-model_v6.cif` / `.pdb` file in the input folder and processes one protein at a time. Useful options (all have sensible defaults pointing at the files in this repo):
-
-- `-i / --input_dir` folder with the AlphaFold structure files (required)
-- `-o / --output` output CSV path (required)
-- `-fa / --fasta` full-length sequences for multifragment proteins
-- `-mf / --multifragment` list of fragment filenames for large proteins
-- `-dd / --dssp_dir` folder with DSSP annotation files
-- `-as / --asa_dir` folder with OpenStructure ASA CSVs
-- `-rf / --model` trained Random Forest
-- `-tm / --train_medians` training medians used for imputation
-
-## Repository layout
-
-```
-sumo_site_predictor.py                    main script
-random_forest.joblib                      trained Random Forest model
-train_medians.joblib                      training medians for imputation
-model_metadata.json                       feature list and decision thresholds
-aaindex.csv                               AAindex1 descriptor table
-human_AF_multifragment.txt                fragment filenames for the 215 large human proteins
-multifrag_prot_idmapping_2026_06_19.fasta full sequences for multifragment proteins
-structures/                               example AlphaFold structures (input)
-dssp/                                     DSSP annotations for the example structures
-asa/                                      OpenStructure solvent accessibility output
-fasta_extract/                            per-protein FASTA files written during a run
-sumoylation_site_predictions.csv          example output for the included structures
-```
-
-The DSSP files were generated separately (DSSP 4 on an HPC cluster) and are provided here ready-made; the script only reads them. The same goes for the OpenStructure ASA CSVs.
 
 ## Output
 
